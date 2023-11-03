@@ -1,249 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website Design</title>
-    <!-- css file  -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utlits.css">
-    <!-- font awesome cdn  -->
-    <script src="https://kit.fontawesome.com/c3171e834c.js" crossorigin="anonymous"></script>
+    <title>Faizan Ali - Personal Website</title>
+    <link rel="stylesheet" href="fa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+.logo{
+    font-size: 35px;
+    padding: 0 200px;
+    line-height: 60px;
+}
+.navbar{
+    color: white;
+    background-color: #5893d9;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar ul{
+    float: right;
+    margin-right: 56px;
+   
+}
+.navbar ul li{
+    
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 35px;
+    font-size: 17px;
+} 
+.bgimage{
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.content{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 0%;
+    float: left;
+    margin: 350px 0px 0px 1100px;
+    width: 45%;
+    
+}
+#name{
+    color: #5893d9;
+}
+.content p{
+    padding: 20px 0px;
+    width: 60%;
+    
+}
+.face{
+    position: absolute;
+    top: 0;
+    margin: 273px 10px 5px 137px;
+
+}
+.bgimage{
+    padding-bottom: 5px;
+    
+}
+.study{
+    background-color: #5893d9;
+     margin: 8px -3px 1px 19px;
+  width: 98%;
+  padding: 22px;
+  color: white;
+
+}
+.study h3{
+    text-align: center;
+    padding-bottom: 22px;
+
+}
+table{
+    width: 100%;
+  
+}
+table th{
+    height: 50px;
+}
+table td{
+    padding-left: 10px;
+    height: 30px;
+}
+table, th, td {
+    border: 3px solid white;
+    border-collapse: collapse;
+    
+}
+
+#projects {
+background-color: #5893d9;
+   
+}
+.footer{
+    background-color: #5893d9;
+    padding: 20px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+}
+.socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.container{
+    display: flex;
+    color: white;
+    padding: 10px;
+ }
+ .container h3, ul{
+    padding: 15px 0px 0px 25px;
+ }
+.Skills, .Projects, .others, .places{
+    width: 25%;
+    background-color: #5893d9;
+    padding: 5px ;
+    margin: 8px;
+}
+.footername{
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar ul{
+    margin-right: -16px;
+  }
+  .logo{
+    padding-left: 50px;
+  }
+  .bgimage{
+    width: 934px;
+    height: 712px;
+  }
+  .face{
+    width: 60%;
+    margin: 176px 10px 10px 33px;
+  }
+  .content{
+    width: 100%;
+    margin: 192px 0px 0px 471px;
+  }
+  .container h3, ul{
+    padding: 7px 0px 0px 25px;
+  }
+  .study{
+    margin: 16px 0px 14px 0px;
+    width: 195%;
+    padding: 12px 35px 32px 31px;
+  }
+  .container{
+    margin: 18px -466px 43px -11px;
+  }
+  .footer{
+    margin-right: -454px;
+  }
+}
+
+</style>
+
 </head>
+
 <body>
-    <!-- header section start  -->
     <header>
-        <div class="head-section layout">
-            <div class="nav-bar flex space-between align-center">
-                <div class="logo uppercase f-w-700 letter-spacing2"><span>Sofia</span> Diana</div>
-                <div class="nav-links">
-                   
-                    <ul class="flex f-w-600">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                
-                <button class="btn hire-me-btn">Hire Me</button>
-                <input type="checkbox" name="checkbox" id="click">
-                <label for="click" class="menu-btn" id="menu">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-            </div>
-            <!-- content  -->
-            <div class="content flex align-center">
-                <!-- left section  -->
-                <div class="left flex2">
-                    <h4 class="uppercase letter-spacing2">I'm <span>Sofia</span> </h4>
-                    <h2 class="my-t-10 uppercase letter-spacing2 f-w-700">Web Designer</h2>
-                    <p class="my-t-10">I am a professional Web Designer and <span>Youtuber.</span> </p>
-                    <button class="btn btn2 my-t-20">Download CV</button>
-                </div>
+        <nav class="navbar">
+            <label class="logo">Faizan Ali</label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <!-- right section  -->
-                <div class="right flex3">
-                    <img src="asset/main-img.png" alt="girl png">
-                    <div class="color-box"></div>    
-                </div>
-            </div>
-        </div>
-    </header>        
-    <!-- about section start  -->
-    <section class="about-me-sec">
-        <div class="about-sec layout">
-            <h3 class="uppercase pd-t-30 text-center">About Me</h3>
-            <hr class="w55 my-t-10">
-
-            <div class="about-content flex justify-center align-center">
-                <!-- left side  -->
-                <div class="left flex2">
-                    <h2 class="uppercase letter-spacing2">Web Desinger</h2>
-                    <p class="my-t-10">I am a professional web designer and youtuber. I have done many projects for my clients. I am a part time freelancer and I do freelancing in part time.</p>
-
-                    <ul>
-                        <li><span class="f-w-600">HTML/CSS/JavaScript</span></li>
-                    </ul>
-
-                    <button class="btn my-t-20">Hire Me</button>
-                </div>
-                <!-- right side  -->
-                <div class="right flex3">
-                    <img src="asset/about me img.png" alt="">
-                    <hr>
-
-                    <!-- color used  -->
-                    <div class="dot-color text-center my-t-10">
-                        <h3>color used</h3>
-                        <span class="dot dot-w"></span>
-                        <span class="dot dot-b"></span>
-                        <span class="dot dot-ws"></span>
-                        <span class="dot dot-bs"></span>
-                        <span class="dot dot-a"></span>
-                    </div>
-                </div>
-            </div>
+    <section>
+        <img class="bgimage" src="bg1.jpg" alt="photo">
+        <img class="face" src="face.png" alt="face">
+        <div class="content">
+            <h1>Hello i'm <span id="name">Faizan Ali</span></h1>
+            <p>and I'm skilled in Blender, creating 3D models and Enviorments for a year. I also have experience in
+                C++ programming, focusing on streamlining 3D design workflows. Excited about combining creativity and
+                technology!</p>
         </div>
     </section>
-    <!-- about section end  -->
 
-    <!-- portfolio section start  -->
-    <section class="portfolio-sec">
-        <div class="portfolio layout">
-            <h3 class="uppercase text-center pd-30">Portfolio</h3>
-            <div class="portolio-parent flex justify-center align-center text-center">
-                <div class="portfolio-child">
-                    <img src="asset/digial marketing.jpg" alt="">
-                    <h3>Digital Marketing Website</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vero hic vitae numquam adipisci expedita!</p>
-                    <button class="btn btn2">Explore More</button>
-                </div>
 
-                <div class="portfolio-child">
-                    <img src="asset/food-burger.jpg" alt="">
-                    <h3>Food Delivery Website</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vero hic vitae numquam adipisci expedita!</p>
-                    <button class="btn btn2">Explore More</button>
-                </div>
+    <section class="study">
 
-                <div class="portfolio-child">
-                    <img src="asset/social media.jpg" alt="">
-                    <h3>Social Media Website</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vero hic vitae numquam adipisci expedita!</p>
-                    <button class="btn btn2">Explore More</button>
-                </div>
-            </div>
-        </div>
+
+        <h3>Educational History</h3>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Matric</td>
+                <td>Govt. High School no.1 Pasrur</td>
+                <td>2015-2017</td>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td>Govt. Degree CollEGE</td>
+                <td>2018-2020</td>
+            </tr>
+            <tr>
+                <td>bS Computer Science</td>
+                <td>University Of Sialkot</td>
+                <td>2020-2024</td>
+            </tr>
+        </table>
     </section>
-    <!-- portfolio section end  -->
 
-    <!-- experience section start  -->
-    <section class="experience-sec">
-        <div class="experience layout">
-            <h3 class="uppercase pd-30 text-center">Experience</h3>
-            <div class="experience-details flex space-between text-center">
-                <div class="col">
-                    <h3>10+</h3>
-                    <p>Complete Website</p>
-                </div>
-
-                <div class="col">
-                    <h3>50</h3>
-                    <p>Landing Page</p>
-                </div>
-
-                <div class="col">
-                    <h3>15</h3>
-                    <p>Client</p>
-                </div>
-
-                <div class="col">
-                    <h3>500+</h3>
-                    <p>Youtube Videos</p>
-                </div>
-            </div>
+<section class="container">
+        <div class="Skills">
+            <h3>Professional Skills</h3>
+            <ul>
+                <li>1.3D Modeling</li>
+                <li>2.C++</li>
+                <li>3.Video Editing</li>
+            </ul>
         </div>
-    </section>
-    <!-- experience section end  -->
 
-    <!-- testimonal section start  -->
-    <section class="testimonial-sec">
-        <div class="testimonial layout">
-            <h3 class="uppercase text-center pd-30">Testimonial</h3>
-            <div class="testimonial-parent flex space-between align-center">
-                <div class="testimonial-child">
-                    <img src="asset/user001.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sapiente esse, placeat quaerat expedita modi.</p>
-                    <div class="review-sec flex space-between">
-                        <div class="icon-sec">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="name-sec text-center">
-                            <h4>Danise Janson</h4>
-                            <p class="designation">Senior Developer</p>
-                        </div>
-                    </div>
-                </div>
+        
 
-                <div class="testimonial-child">
-                    <img src="asset/user002.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sapiente esse, placeat quaerat expedita modi.</p>
-                    <div class="review-sec flex space-between">
-                        <div class="icon-sec">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="name-sec text-center">
-                            <h4>Lauren Scott</h4>
-                            <p class="designation">Managing Director</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="others">
+            
+            <h3>Hobbies</h3>
+            <ul>
+                <li>1.Movie Enthusiast</li>
+                <li>2.Cricet</li>
+                <li>3.Video Editing</li>
+                <li>4.Snooker</li>
+                <li>5.Football</li>
+            </ul>
+         
+             
+         </div>
 
-                <div class="testimonial-child">
-                    <img src="asset/user003.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sapiente esse, placeat quaerat expedita modi.</p>
-                    <div class="review-sec flex space-between">
-                        <div class="icon-sec">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="name-sec text-center">
-                            <h4>Nicole Fusaro</h4>
-                            <p class="designation">HR Manager</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+         <div class="places">
+            <h3>Awesome Places of Pakistan Visited</h3>
+            <ul>
+                <li>1.Islamabad</li>
+                <li>2.Minar-e-Pakistan </li>
+                <li>3.kartarpur</li>
+                <li>4.karachi Beach</li>
+                <li>5.Pasrur</li>
+            </ul>
         </div>
-    </section>
-    <!-- testimonal section end -->
-
-    <!-- contact-us section start  -->
-    <section class="contact-us-sec">
-        <div class="contact-us layout">
-            <h3 class="text-center uppercase pd-30">Contact us</h3>
-            <div class="contact-details flex space-between align-center">
-                <div class="left-sec">
-                    <h5>Main Branch</h5>
-                    <p>Majhauli Chowk, <br> Main Road Mairwa, <br>Siwan, Bihar - 841239</p>
-                </div>
-                <div class="center-sec">
-                    <h5>Contact No.</h5>
-                    <p>Mobile No. +1234567890</p>
-                    <h5>Email Id</h5>
-                    <p>vsclassonline@gmail.com</p>
-                </div>
-                <div class="right-sec text-center">
-                    <form action="">
-                        Email : <input type="email" id="email-id"> <br>
-                        <button class="btn btn2">Subscribe</button>
-                    </form>
-                </div>
-            </div>
+        
+        <div class="Projects">
+            <h3 >Projects</h3>
+            <ul>
+                <li>1.Dying world-Fall Of the Civiilzation</li>
+                <li>2.Library Management System</li>
+                <li></li>
+            </ul>
         </div>
-    </section>
-    <!-- contact-us section end  -->
 
-    <!-- footer section  -->
-    <footer>
-        <div class="footer-sec layout text-center">
-            <p>Copyright &copy; VSClass Online | All Right Reserved</p>
+</section>
+
+<section class="self">
+    <div>
+      <h3>Life Ambition</h3>  
+      <p>your life ambitions</p>
+    </div>
+    
+        <div>
+           <h3>What You Did for Your Country</h3>
+        <p>Your contributions to your country...</p> 
         </div>
-    </footer>
-</body>   
-    </html> 
+  
+        <div>
+            <h3>What You Want to Do for Your Country</h3>
+        <p>Your future plans for contributing to your country...</p>
+        </div>
 
+        
+</section>
+
+        
+    
+   <div class="footer">
+    <div class="footername">
+          <h2>Faizan Ali</h2>
+    <h3>Email: 20101002-024@uskt.edu.pk</h3>  
+    </div>
+
+
+    <div class="socialicons">
+        <a href="https://wa.me/03026290356"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/modeling.wonders"><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+    </div>
+   </div>
+
+    
+</body>
+
+</html>
